@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="SMVD University">
+        <title>WEBCAST</title>
+        <link href="bootstrap/css/theme.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="flipclock.css" />
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Raleway:300,700,900,500' rel='stylesheet' type='text/css'>
+		<link rel="icon" href="images/logo.png" type="image/jpg">
+        
+    </head>
+    <body style="background-image: url('back.jpg');background-repeat: repeat;">
+        <section id="about" class="number wow fadeInUp" data-wow-delay="300ms">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+					<div class="col-md-12 opaline">
+					<img src="images/logo.png" alt="" class="img-responsive" style="height:90px; width:105px;position: fixed;top: 1%;left: 17%;">
+								<h3 style="position: fixed;top: 1%;left: 25%; color:white">&nbsp;&nbsp;&nbsp;&nbsp;SHRI MATA VAISHNO DEVI UNIVERSITY</h3>
+								<p style="position: fixed;top: 9%;left: 25%; color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Approved Under Section 2(f) and 12(b) og UGC Act of 1966</p>
+					</div>
+					</div>
+					
+					<div class="row">
+                        <div class="col-md-6 opaline">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+								<h5>WEBCAST</h5>
+                                    <h2><span style="color:red">5<sup>th</sup></span> Convocation 2016</h2>
+									<h5>on 19<sup>th</sup> April, 2016 @ 10:00 AM</h5>
+									 <h5 style="color:red">Chief Guest<h5>
+									<h5>Shri Narendra Modi</h5>
+									<h5>Hon'ble Prime Minister of India</h5>
+									<br><br><br><br>
+									
+                                </div>
+                            </div>
+                        </div>
+						<div class="col-md-6 opaline">
+						<img src="images/shri.jpg" alt="" class="img-responsive" style="height:308.5px; width:400px;;">
+						<br><br><br><br><br>
+						
+						</div>
+						<div class="clock-builder-output" style="position:absolute;bottom:0;left:35%; top:75%;"></div>
+					</div>
+					                    <div class="row">
+					<div class="col-md-12 opaline text-center">
+					<h5>Developed by <a href="http://nilay1101.github.io/Diana/index.html">Diana</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hosted by <a href="http://network.smvdu.ac.in/">Network Center SMVD University</a></h5>
+					</div>
+					</div>
+						
+                    </div>
+                </div>
+            </div>
+        </section>
+   
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="flipclock.js"></script>
+<style text="text/css">
+body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul li a div div.inn { color: black; background-color:white; } body .flip-clock-dot, body .flip-clock-small-wrapper .flip-clock-dot { background: white; } body .flip-clock-wrapper .flip-clock-meridium a, body .flip-clock-small-wrapper .flip-clock-meridium a { color: white; }
+</style>
+<script type="text/javascript">
+$(function(){
+	FlipClock.Lang.Custom = { days:'Days', hours:'Hours', minutes:'Minutes', seconds:'Seconds' };
+	var opts = {
+		clockFace: 'HourCounter',
+		countdown: true,
+		language: 'Custom'
+	};  
+	var countdown = 1461011400 - ((new Date().getTime())/1000); // from: 04/19/2016 02:00 am +0530
+	countdown = Math.max(1, countdown);
+	$('.clock-builder-output').FlipClock(countdown, opts);
+});
+</script>
+    </body>
+</html>
+
